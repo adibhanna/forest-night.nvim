@@ -1,0 +1,81 @@
+# Forest Night - Ghostty Theme
+
+# Basic colors
+background = #1a2125
+foreground = #c9d1d9
+
+# Cursor
+cursor-color = #6b8fa3
+cursor-text = #1a2125
+
+# Selection
+selection-background = #2d3540
+selection-foreground = #c9d1d9
+
+# Color palette (16 colors)
+# Black
+palette = 0=#1a2125
+palette = 8=#4a5568
+
+# Red
+palette = 1=#E91E63
+palette = 9=#E91E63
+
+# Green
+palette = 2=#8FBC8F
+palette = 10=#8FBC8F
+
+# Yellow
+palette = 3=#F39C12
+palette = 11=#F39C12
+
+# Blue
+palette = 4=#4ECDC4
+palette = 12=#66D9EF
+
+# Magenta
+palette = 5=#9B59B6
+palette = 13=#9B59B6
+
+# Cyan
+palette = 6=#4ECDC4
+palette = 14=#4ECDC4
+
+# White
+palette = 7=#c9d1d9
+palette = 15=#ffffff
+
+# Extended colors for full 256 color support
+# Dark grays
+palette = 232=#1a2125
+palette = 233=#252e38
+palette = 234=#2a2e33
+palette = 235=#3a4a55
+
+# Medium grays
+palette = 236=#4a5568
+palette = 237=#6b7280
+palette = 238=#8fa1b3
+
+# Light grays
+palette = 239=#c9d1d9
+palette = 240=#ffffff
+
+# Theme accent colors
+palette = 241=#4ECDC4  # Teal/Cyan
+palette = 242=#66D9EF  # Bright cyan
+palette = 243=#9B59B6  # Purple
+palette = 244=#F39C12  # Orange
+palette = 245=#8FBC8F  # Green
+palette = 246=#c78a7a  # Light brown/red
+palette = 247=#6b8fa3  # Blue-gray (cursor color)
+palette = 248=#E91E63  # Pink/red
+
+# Additional theme colors for syntax highlighting
+palette = 249=#4ECDC4  # String color
+palette = 250=#9B59B6  # Function color
+palette = 251=#F39C12  # Keyword color
+palette = 252=#c78a7a  # Type color
+palette = 253=#8FBC8F  # Constant color
+palette = 254=#66D9EF  # Property color
+palette = 255=#2d3540  # Visual selection 
