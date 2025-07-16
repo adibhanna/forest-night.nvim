@@ -1,8 +1,59 @@
-# Forest Night Ghostty Theme
+# Forest Night Theme
 
-A dark, forest-inspired theme for [Ghostty terminal](https://ghostty.org/) based on the popular [forest-night.nvim](https://github.com/ForrestKnight/forest-night-theme/) color scheme.
+A dark, forest-inspired theme for **Neovim** and **Ghostty terminal**. This theme brings the beautiful forest-night color scheme to both your editor and terminal for a cohesive development experience.
+
+## Features
+
+- **Consistent color palette** across Neovim and Ghostty
+- **Dark forest-inspired aesthetic** with carefully selected colors
+- **Comprehensive plugin support** for Neovim
+- **Easy installation** for both applications
 
 ## Installation
+
+### Neovim
+
+#### Using a Plugin Manager
+
+**Lazy.nvim:**
+```lua
+{
+  "adibhanna/forest-night.nvim",
+  priority = 1000,
+  config = function()
+    vim.cmd([[colorscheme forest-night]])
+  end,
+}
+```
+
+**Packer.nvim:**
+```lua
+use {
+  "adibhanna/forest-night.nvim",
+  config = function()
+    vim.cmd([[colorscheme forest-night]])
+  end
+}
+```
+
+#### Manual Installation
+
+1. **Copy the theme files** to your Neovim configuration directory:
+   ```bash
+   # Copy the color scheme
+   cp colors/forest-night.lua ~/.config/nvim/colors/
+   
+   # Copy the theme modules
+   cp -r lua/forest-night ~/.config/nvim/lua/
+   ```
+
+2. **Apply the theme** in your Neovim configuration:
+   ```lua
+   -- In your init.lua or init.vim
+   vim.cmd([[colorscheme forest-night]])
+   ```
+
+### Ghostty Terminal
 
 1. **Copy the theme file** to your Ghostty themes directory:
    ```bash
@@ -35,7 +86,7 @@ The Forest Night theme features:
 
 ### Color Palette
 
-The theme includes carefully selected colors that match the forest-night aesthetic:
+The theme includes carefully selected colors that create the forest-night aesthetic:
 
 - **Red**: `#E91E63` - Pink-red accent
 - **Green**: `#8FBC8F` - Soft forest green
@@ -45,7 +96,20 @@ The theme includes carefully selected colors that match the forest-night aesthet
 - **Cyan**: `#4ECDC4` - Teal-cyan
 - **White**: `#c9d1d9` - Soft gray-white
 
-## Configuration Options
+## Configuration
+
+### Neovim Configuration
+
+You can customize the theme with various options:
+
+```lua
+-- Example configuration
+require("forest-night").setup({
+  -- Add your custom settings here
+})
+```
+
+### Ghostty Configuration
 
 You can customize the theme further by modifying these settings in your Ghostty config:
 
@@ -53,29 +117,24 @@ You can customize the theme further by modifying these settings in your Ghostty 
 # Use the forest-night theme
 theme = forest-night
 
-# Optional: Adjust cursor style
-cursor-style = block
-cursor-style-blink = true
-
-# Optional: Adjust window padding
-window-padding-x = 4
-window-padding-y = 4
-
-# Optional: Enable transparency (requires background opacity)
-background-opacity = 0.95
 ```
 
 ## Compatibility
 
-This theme is designed to work with:
+### Neovim
+- Neovim 0.5.0 and later
+- Supports TreeSitter highlighting
+- Compatible with popular plugins (LSP, Telescope, etc.)
+
+### Ghostty
 - Ghostty 1.0.0 and later
 - All platforms (macOS, Linux, Windows)
 - Both light and dark system themes
 
 ## Related Projects
 
-- [forest-night.nvim](https://github.com/ForrestKnight/forest-night-theme/) - The original Neovim theme
 - [Ghostty](https://ghostty.org/) - The terminal emulator
+- [forest-night.nvim](https://github.com/ForrestKnight/forest-night-theme/) - Original inspiration
 
 ## Contributing
 
