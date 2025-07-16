@@ -116,30 +116,4 @@ You can customize the theme further by modifying these settings in your Ghostty 
 ```
 # Use the forest-night theme
 theme = forest-night
-
 ```
-
-## Compatibility
-
-### Neovim
-- Neovim 0.5.0 and later
-- Supports TreeSitter highlighting
-- Compatible with popular plugins (LSP, Telescope, etc.)
-
-### Ghostty
-- Ghostty 1.0.0 and later
-- All platforms (macOS, Linux, Windows)
-- Both light and dark system themes
-
-## Related Projects
-
-- [Ghostty](https://ghostty.org/) - The terminal emulator
-- [forest-night.nvim](https://github.com/ForrestKnight/forest-night-theme/) - Original inspiration
-
-## Contributing
-
-Feel free to submit issues or pull requests if you notice any problems or have suggestions for improvements.
-
-## License
-
-This theme is released under the same license as the original forest-night theme. 
